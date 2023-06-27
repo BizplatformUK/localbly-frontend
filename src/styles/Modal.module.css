@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400;700&display=swap');
+.modalBackdrop{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgb(30, 41, 59, 0.6);
+    z-index: 999;
+}
+
+.modalWrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 5%;
+    overflow-y: scroll;
+}
+
+.backBtn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block: 1rem;
+}
+
+.backBtn i{
+    font-size: 28px;
+    color: #109cf1;
+}
+
+.backBtn img{
+    width: 25px;
+}
+
+.backBtn h6{
+    font-family: 'Roboto';
+    font-size: 20px; 
+    color: #231d4f;
+}
+
+.modalHeader{
+    margin: 0.6rem 0;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgb(203 213 225);
+}
+
+.modalHeader h3{
+    color: #231d4f;
+    font-family: 'Roboto';
+}
+
+.modalHeader p{
+    font-family: 'Lato';
+    color: #231d4f;
+}
+
+.FullmodalWrapper{
+    position: fixed;
+    background-color: #f4f4f5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+.fullmodalHeader{
+    border-bottom: 1px solid rgb(203 213 225);
+}
+
+.fullmodalHeader, 
+.FullmodalWrapper .closeModal{
+    padding: 0.4rem 5%;
+}
+
+@media(min-width:900px){
+    .modalWrapper{
+        width: 35vw;
+        padding: 1rem 0.6rem;
+        height: fit-content;
+        border-radius: 0.4rem;
+        margin-block: 1rem;
+        overflow-y: scroll;
+    }
+}

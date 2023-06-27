@@ -1,0 +1,12 @@
+.formFlex label{
+    color: #005FCC;
+}
+
+@media(min-width:900px){
+    .formFlex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        padding: 0.5rem 0;
+    }
+}

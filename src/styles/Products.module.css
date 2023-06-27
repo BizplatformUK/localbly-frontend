@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source Sans Pro:wght@300;400;700&display=swap');
+.formFlex{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.productForm{
+    max-width: 100vw;
+}
+
+.description{
+    padding: 0.6rem 0;
+}
+
+.formGroup{
+    padding: 0.5rem 0;
+}
+
+.addProductForm{
+    max-width: 60vw;
+}
+
+.addProductForm .formGroup label{
+    font-family: 'Lato';
+    color: #005FCC;
+    font-size: 14px;
+}
+
+.addProductForm  .inactive{
+    color: #111111;
+}
+
+.addProductForm  .active{
+    color: #005FCC;
+}
+
+
+
+.formFlex .formCheck label{
+    color: #111111;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #DFE3E6;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+}
+
+.formFlex .formCheck .featured{
+    border-color: #005FCC;
+}
+
+.formFlex .formCheck p{
+    font-family: 'Lato';
+    font-size: 14px;
+}
+
+.formFlex .formCheck .featured p,
+.formFlex .formCheck .featured h6{
+    color: #005FCC;
+}
+
+.topFormGroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+}
+
+.textarea{
+    padding: 0.5rem 0;
+    margin: 0.4rem 0;
+}
+
+.card{
+    border: 1px solid #c4c5bc;
+    border-radius: 0.4rem;
+    padding: 0.4rem 3%;
+    margin-block: 0.4rem;
+}
+
+.card h6{
+    font-family: 'Lato';
+    font-size: 20px;
+    border-bottom: 1px solid #c4c5bc;
+}
+
+.textarea textarea{
+    height: 20vh;
+}
+

@@ -1,0 +1,35 @@
+.sliderMenu {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .container {
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  
+  .tabs {
+    display: inline-block;
+  font-size: 16px;
+  transition: transform 0.3s ease-out;
+  }
+  
+  .tabs label {
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  
+  .tabs input[type='radio'] {
+    display: none;
+  }
+  
+  .tabs label.active {
+    font-weight: bold;
+  }
+  
+  .tabs label:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;700&display=swap');
+
+.productForm{
+    padding: 0.4rem 5%;
+}
+
+.productForm h5{
+    padding: 0.5rem 0;
+}
+
+.deat{
+   border-bottom: 1px solid rgb(203 213 225);
+    margin: 0.5rem 0;
+    padding: 0.4rem;
+}
+
+.input{
+    display: block;
+    width: 45%;
+    border: 1px solid rgb(203 213 225);
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.formFlex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    align-items: center;
+    max-width: 40vw;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem 0;
+}
+
+.formGroup input{
+    padding: 0.6rem 0.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(203 213 225);
+}
+
+.productPrice{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+}
+
+.productPrice input{
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.6rem 0.4rem;
+}
+
+.productPrice .kes{
+    background-color: rgb(203 213 225);
+    padding: 0.5rem 0.4rem;
+    border: none;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.toggleSwitch{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 74px;
+    height: 34px;
+    margin-right: 10px;
+    border-radius: 1rem;
+  
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 1rem;
+
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #005FCC;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #109cf1;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .sale h6{
+    color: #005FCC;
+    font-family: 'Montserrat';
+    font-size: 16px;
+  }
+
+  .sale p{
+    font-family: 'Lato';
+  }
+
+  .textarea{
+    border: 1px solid rgb(203 213 225);
+    height: 20vh;
+    border-radius: 0.4rem;
+  }
+
+  .labels{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0.5rem 0;
+  }
+
+  .labels label{
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid rgb(203 213 225);
+    gap: 5px;
+    padding: 0.6rem 0.4rem;
+    border-radius: 0.4rem;
+    color: rgb(71 85 105);
+  }
+
+ 
+
+  .labels input{
+    width: 20px;
+    height: 20px;
+  }
+
+  .labels .activelabel{
+    border: 1px solid #005FCC;
+    color: #005FCC;
+    background-color: #fff;
+  }
+
+  .offers{
+    padding: 0.6rem 0;
+  }
+
+  .addBtn{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0.6rem 0.4rem;
+    border-radius: 0.4rem;
+    color: #005FCC;
+    background-color: transparent;
+    font-size: 17px;
+  }
+
+  .offerEmpty{
+    padding: 0.8rem 0;
+  }
+
+  .offerEmpty img{
+    width: 100px;
+  }
+
+  .offerEmpty h2{
+    font-family: 'Montserrat';
+    color: #005FCC;
+    font-size: 16px;
+  }
+
+  .offerEmpty p{
+    font-family: 'Lato';
+  }
+
+  .optionsLabel{
+    display: flex;
+    align-items: center;
+  }
+
+  .hide,
+  .formHide{
+    display: none;
+  }
+
+  .colors{
+    padding: 0.5rem 0;
+  }
+
+  .chips{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .chip{
+    background-color: #b3ddff;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .chip button{
+    background-color: #c4c5bc;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+  }
+
+  .chip span{
+    font-family: 'Lato';
+    color: #7380ec;
+  }
+  
+ 
+
+
+

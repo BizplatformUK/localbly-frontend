@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source Sans Pro:wght@300;400;700&display=swap');
+.sort{
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 0;
+    gap: 5px;
+}
+
+.sort label{
+    display: flex;
+    border: 1px solid rgb(203 213 225);
+    gap: 5px;
+    padding: 0.4rem;
+    color: rgb(148 163 184);
+    font-family: 'Source Sans Pro';
+    border-radius: 0.4rem;
+}
+
+.sort .activeLabel{
+    border-color: #109cf1;
+    color: #109cf1;
+    font-weight: 700;
+}

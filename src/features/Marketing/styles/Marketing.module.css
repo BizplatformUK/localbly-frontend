@@ -1,0 +1,129 @@
+.radioLabels{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 0.4rem 0;
+}
+
+.radioLabel{
+    border: 1px solid rgb(203 213 225);
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    margin: 1.2rem 0;
+}
+
+.activeRadioLabel{
+    border: 1px solid #109cf1;
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    margin: 1.2rem 0;
+    background-color: #e0f7ff;
+}
+
+.radioLabels label input{
+    width: 20px;
+    height: 20px;
+}
+
+.radioLabels .activeLabel{
+    border-color: #109cf1;
+    color:#109cf1;
+    background-color: #f6f5ff;
+}
+
+.radioButtons h6{
+    padding: 0.4rem 0;
+    font-size: 14px;
+}
+
+.radios{
+    padding: 0.4rem 0;
+}
+
+.offerFormTitle{
+    padding: 0.5rem 0;
+}
+
+.offerForm{
+    margin: 0.5rem 0;
+    padding-right: 10%;
+    border-radius: 0.4rem;
+
+}
+
+.offerImg{
+    padding: 0.7rem 0;
+}
+
+.offerImg label h6{
+    font-size: 14px;
+}
+
+.offerForm img,
+.editForm img{
+    width: 100%;
+    height: auto;
+    max-height: 30vh;
+    min-height: 30vh;
+    object-fit: cover;
+    border-radius: 0.4rem;
+}
+
+.editForm{
+    padding: 0.4rem 5%;
+    max-width: 60vw;
+}
+
+.displayWrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 30vh;
+    background-color: var(--bg-white);
+    padding: 0.4rem 5%;
+    border-radius: 0.4rem;
+}
+
+.displayWrapper img{
+    width: 100%;
+    height: auto;
+    max-height: 25vh;
+    min-height: 25vh;
+    object-fit: cover;
+   }
+
+.offerDeat{
+    display: grid;
+    place-items: center;
+    height: 25vh;
+  }
+  
+  .offerDeat h2{
+    color: var(--bg-white);
+    max-width: 20vw;
+    font-size: var(--fs-600);
+    font-family: var(--ff-title);
+  }
+
+  .offerTop{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+
+  .formGroup{
+    padding: 0.5rem 0;
+  }
+
+  .formGroup label{
+    color: #000100;
+    font-family: 'Lato';
+    font-size: 12px;
+  }
+
+  @media(min-width:900px){
+    .formFlex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+    }
+  }

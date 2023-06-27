@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source Sans Pro:wght@300;400;700&display=swap');
+.registerFormImg img{
+    width: 150px;
+}
+
+.createshop{
+    padding: 1rem 5%;
+}
+
+.createForm{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.inputTitle{
+   padding: 1rem 0;
+    
+}
+.inputTitle h3{
+    font-family: 'Source Sans Pro';
+    color: #005FCC;
+    font-size: 25px;
+    padding: 0.4rem 0;
+}
+
+.inputTitle p{
+    font-family: 'Lato';
+    font-size: 16px;
+}
+.input{
+    border: none;
+    border: 1px solid rgb(148 163 184);
+    width: 100%;
+    background-color: transparent;
+    padding: 0.8rem 0.4rem;
+    outline: none;
+    border-radius: 0.4rem;
+}
+
+.input:focus{
+    border-color: #005FCC;
+}
+
+.checkboxControl label{
+    padding: 0.6rem 0.4rem;
+    border: 1px solid rgb(148 163 184);
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0.4rem;
+    color:rgb(148 163 184) ;
+}
+
+.checkboxControl .activeLabel{
+    border-color: #109cf1;
+    color: #005FCC;
+}
+
+.checkboxControl label input{
+    width: 20px;
+    height: 20px;
+    border-radius: 0.6rem;
+}
+
+.loginImg{
+    width: 150px;
+    height: 50px;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.formGroup{
+    padding: 0.6rem 0;
+}
+
+.createBtn{
+    background-color: #005FCC;
+    padding: 1rem 0.4rem;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 0.4rem;
+}
+
+.loginPage{
+    padding: 3rem 5%;
+}
+
+.loginImg{
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.loginImg img{
+    width: 200px;
+
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loginFormTitle{
+    padding: 0.5rem 0;
+}
+
+.loginFormTitle h3{
+    color: #109cf1;
+    font-family: 'Source Sans Pro';
+}
+
+.loginFormTitle p{
+    font-family: 'Lato';
+}
+
+.leftside,
+.rightSide{
+    padding: 1rem 5%;
+}
+
+.leftside img{
+    width: 150px;
+}
+
+.leftSidecontent{
+    display: none;
+}
+
+.registerForm{
+    padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .createForm{
+        margin-inline:auto;
+        max-width: 30vw;
+    }
+
+    .loginForm{
+        margin-inline:auto;
+        max-width: 30vw;
+    }
+
+    .registerPage{
+        display: grid;
+        grid-template-columns: 30rem auto;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .leftside{
+        background-color: #fff;
+    }
+
+    .leftSidecontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+
+    .leftSidecontent img{
+       width: 450px;
+       
+    }
+
+    .leftSidecontent .content{
+        text-align: center;
+        max-width: 30vw;
+        margin-inline: auto;
+    }
+
+    .leftSidecontent .content h2{
+        font-family: 'Source Sans Pro';
+        font-size: 25px;
+        color: #005FCC;
+    }
+
+    .leftSidecontent .content p{
+        font-family: 'Lato';
+        padding: 0.5rem 0;
+        font-weight: 500;
+    }
+
+    .signupform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        max-width: 30vw;
+        margin-inline: auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .createForm{
+        margin-inline:auto;
+        max-width: 20vw;
+    }
+
+    .loginForm{
+        margin-inline:auto;
+        max-width: 20vw;
+    }
+
+    .registerPage{
+        display: grid;
+        grid-template-columns: 50rem auto;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .leftside{
+        background-color: #fff;
+    }
+
+    .leftSidecontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+
+    .leftSidecontent img{
+       width: 650px;
+       
+    }
+
+    .leftSidecontent .content{
+        text-align: center;
+        max-width: 20vw;
+        margin-inline: auto;
+    }
+
+    .leftSidecontent .content h2{
+        font-family: 'Source Sans Pro';
+        font-size: 25px;
+        color: #005FCC;
+    }
+
+    .leftSidecontent .content p{
+        font-family: 'Lato';
+        padding: 0.5rem 0;
+        font-weight: 500;
+    }
+
+    .signupform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        max-width: 20vw;
+        margin-inline: auto;
+    }
+}

@@ -1,0 +1,73 @@
+.dashboard{
+  display: grid;
+  grid-template-columns: 14rem auto 14rem;
+}
+
+.leftSide{
+  background-color: #EDF5FF;
+  height: 100vh;
+  width: 100%;
+  animation: pulse 1s infinite;
+}
+
+.mainContent{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  animation: pulse 1s infinite;
+}
+
+.user{
+  display: flex;
+  align-items: flex-start;
+}
+
+.rightSide{
+  padding: 0.4rem;
+}
+
+.lineOne{
+   width: 50%;
+}
+.leftSide ul{
+  display: flex;
+  padding: 1.5rem 15%;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.leftSide ul li{
+  width: 80%;
+  height: 8px;
+  border-radius: 0.4rem;
+  background-color: #ccc;
+}
+  
+  .overlayCircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    animation: pulse 1s infinite;
+  }
+
+  
+  .overlayLine {
+    width: 100%;
+    background-color: #ccc;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
