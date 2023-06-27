@@ -4,7 +4,7 @@ const editService = async(req, res) => {
     const session = req.user
     //const data = req.body;
     
-    const response = await fetch(process.env.API_URL + `shops/update-shop/${session.shop.id}`, {
+    const response = await fetch(process.env.API_URL + `auth/update-shop/${session.shop.id}`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

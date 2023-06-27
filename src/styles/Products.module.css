@@ -2,7 +2,7 @@
 .formFlex{
     display: grid;
     gap: 5px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     width: 100%;
     padding: 0.5rem 0;
 }
@@ -20,7 +20,7 @@
 }
 
 .addProductForm{
-    max-width: 60vw;
+    max-width: 100%;
 }
 
 .addProductForm .formGroup label{
@@ -91,5 +91,15 @@
 
 .textarea textarea{
     height: 20vh;
+}
+
+@media(min-width:900px){
+    .formFlex{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .addProductForm{
+        max-width:60vw;
+    }
 }
 

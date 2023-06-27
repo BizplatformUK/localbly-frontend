@@ -30,6 +30,14 @@ export default function Account({data}){
 
 export async function getServerSideProps(ctx) {
     const session = await getSession(ctx)
+    if(!session){
+        return{
+            redirect:{
+                destination:'/login',
+                permanent:false
+            }
+        }
+    }
     const response = await fetch(process.env.API_URL + `auth/get-single-shop/${session.id}`, {
         method: 'GET',
         headers: {

@@ -28,6 +28,7 @@ export default function Profile({shop}){
         const imageUrl = file ? await sendImageData('logos', file) : null;
         const params = {name:values.name, town:values.town, logo:imageUrl || shop.logo, location:values.location, phoneNumbers:values.numbers, email:values.email, color:value}
         const res = await sendFormData(params, 'api/post/edit-profile', 'POST');
+        console.log(res);
         if(res.code === 3){
             setLoading(false);
             Notiflix.Notify.failure(`${res.error}`, {position: 'center-top'});
@@ -35,6 +36,7 @@ export default function Profile({shop}){
         }
         setValue(res.result.color)
         setImageUrl(res.result.logo);
+        setValue(res.result.brandcolor)
         setLoading(false);
         Notiflix.Notify.success(`${res.message}`, {position: 'center-top'});
     }
