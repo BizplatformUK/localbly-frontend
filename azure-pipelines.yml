@@ -48,6 +48,7 @@ stages:
               appType: webAppLinux
               WebAppName: $(webAppName)
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+              SlotName: 'dev'
               RuntimeStack: 'NODE|16.13'
               StartupCommand: 'npm run dev'
               ScriptType: 'Inline Script'
