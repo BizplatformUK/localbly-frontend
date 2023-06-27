@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head'
 import { useSession } from "next-auth/react";
-import {AppShell, Navbar,Header, LoadingOverlay, Text,Avatar,MediaQuery,Burger, Menu,NavLink,useMantineTheme,ActionIcon, useMantineColorScheme} from '@mantine/core';
+import {AppShell, Navbar,Header, LoadingOverlay, Text,Avatar,MediaQuery,Burger, Menu,NavLink} from '@mantine/core';
 import Image from 'next/image';
 import Link from 'next/link';
 import { signOut } from 'next-auth/react';

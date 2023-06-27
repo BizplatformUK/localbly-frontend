@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { getData } from "../../utils/utilFunctions";
-import { useEffect, useState } from "react";
-import { Breadcrumbs, Title, Text, NavLink } from "@mantine/core";
+import { Breadcrumbs, Title, Text } from "@mantine/core";
 import { useRouter } from "next/router";
 export default function PageBreadcrumbs(){
     const router = useRouter()
