@@ -53,6 +53,5 @@ stages:
               StartupCommand: 'npm run start'
               ScriptType: 'Inline Script'
               InlineScript: |
-                npm cache clean --force
                 npm install
                 npm run build --if-present
