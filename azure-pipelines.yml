@@ -3,8 +3,8 @@ trigger:
 
 variables:
   azureSubscription: 'abd2a959-a9ce-4d49-80b2-b0a1672fa568'
-  webAppName: 'localbly'
-  environmentName: 'localbly'
+  webAppName: 'localbly/dev'
+  environmentName: 'localbly/dev'
   vmImageName: 'ubuntu-latest'
 
 stages:
