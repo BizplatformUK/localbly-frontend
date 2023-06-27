@@ -50,7 +50,7 @@ stages:
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               SlotName: 'dev'
               RuntimeStack: 'NODE|16.13'
-              StartupCommand: 'npm run dev'
+              StartupCommand: 'npm run start'
               ScriptType: 'Inline Script'
               InlineScript: |
                 npm install
