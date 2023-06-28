@@ -53,5 +53,5 @@ stages:
               StartupCommand: 'npm run start'
               ScriptType: 'Inline Script'
               InlineScript: |
-                npm install
+                npm install --no-warnings
                 npm run build --if-present
