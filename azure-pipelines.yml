@@ -3,8 +3,8 @@ trigger:
 
 variables:
   azureSubscription: 'abd2a959-a9ce-4d49-80b2-b0a1672fa568'
-  webAppName: 'LocalblyTest'
-  environmentName: 'LocalblyTest'
+  webAppName: 'localbly'
+  environmentName: 'localbly'
   vmImageName: 'ubuntu-latest'
 
 stages:
@@ -34,7 +34,7 @@ stages:
   jobs:
   - deployment: DeployToDevelopment
     displayName: Deploy to Development
-    environment: $(environmentName)
+    environment: $(environmentName)-dev
     pool:
       vmImage: $(vmImageName)
     strategy:
@@ -48,6 +48,7 @@ stages:
               appType: webAppLinux
               WebAppName: $(webAppName)
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+              SlotName: 'dev'
               RuntimeStack: 'NODE|18.13'
               StartupCommand: 'npm run start'
               ScriptType: 'Inline Script'
