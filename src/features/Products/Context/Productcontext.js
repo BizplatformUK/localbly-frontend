@@ -84,7 +84,6 @@ export function ProductsProvider({children}){
                 body: JSON.stringify({idsArr:ids})
             })
             const data = await response.json();
-            console.log(data);
             if(data.code === 0){
                 setIds([])
                 setEditLoading(false)

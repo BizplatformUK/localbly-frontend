@@ -10,7 +10,7 @@ export default function ProductList(){
     const [opened, { open, close }] = useDisclosure(false);
     const {products, loading, totalPages, editLoading, addFeatured, removeFeatured, ids, setIds,  filter, handleItemClick, setFilter, count, value, handlers, setValue} = useContext(productsContext)
     const isPresent = totalPages > 1;
-    
+    console.log(products);
     const isLong = ids.length >= 1;
     return(
         <>
